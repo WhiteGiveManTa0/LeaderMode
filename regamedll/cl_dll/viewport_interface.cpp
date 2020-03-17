@@ -73,6 +73,7 @@ void CClientVGUI::ActivateClientUI(void)
 	g_pViewPort->ActivateClientUI();
 	g_pClientVGUI->HideClientUI();
 	*/
+	IN_ActivateMouse();
 }
 
 void CClientVGUI::HideClientUI(void)
@@ -81,4 +82,5 @@ void CClientVGUI::HideClientUI(void)
 	g_pViewPort->HideClientUI();
 	g_pClientVGUI->HideClientUI();
 	*/
+	IN_DeactivateMouse();
 }

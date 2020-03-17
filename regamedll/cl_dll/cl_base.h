@@ -85,7 +85,7 @@ Created Date: 05 Mar 2020
 #include "../game_shared/shared_util.h"
 
 // for ISurface
-#include "../common/interface.h"
+#include "../public/interface.h"
 
 // for local_state_s
 #include "../common/entity_state.h"
@@ -95,14 +95,22 @@ Created Date: 05 Mar 2020
 #include "../dlls/weapontype.h"
 
 // Ahh.. we are finally here, VGUI.
-#include <VGUI/VGUI.h>
-#include <VGUI/ISurface.h>
-#include <VGUI/IPanel.h>
-#include <VGUI/IVGui.h>
-#include <VGUI/IInput.h>
-#include <VGUI/IScheme.h>
-#include <VGUI/ISystem.h>
-#include <VGUI/ILocalize.h>
+#include <../public/vgui/VGUI.h>
+#include <../public/vgui_controls/Controls.h>
+#include <../public/vgui/ISurface.h>
+#include <../public/vgui/IPanel.h>
+#include <../public/vgui/IVGui.h>
+#include <../public/vgui/IInput.h>
+#include <../public/vgui/IScheme.h>
+#include <../public/vgui/ISystem.h>
+#include <../public/vgui/ILocalize.h>
+
+// VGUI control
+#include <../public/vgui_controls/Panel.h>
+
+// customized VGUI
+#include "../public/vgui/MessageMap.h"
+#include "Viewport/Viewport.h"
 
 // custom header starts from here.
 #include "cdll_int.h"

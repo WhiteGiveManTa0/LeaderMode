@@ -28,6 +28,9 @@
 
 #pragma once
 
+#include "utlrbtree.h"
+#include "utlvector.h"
+
 class CUtlSymbolTable;
 
 typedef unsigned short UtlSymId_t;

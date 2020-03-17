@@ -27,6 +27,7 @@
 */
 
 #include "precompiled.h"
+#include "MemPool.h"
 
 CMemoryPool::CMemoryPool(int blockSize, int numElements)
 {

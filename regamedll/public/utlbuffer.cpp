@@ -34,6 +34,8 @@
 #include <stdlib.h>
 #include <limits.h>
 
+#include "utlbuffer.h"
+
 // Constructors
 CUtlBuffer::CUtlBuffer(int growSize, int initSize, bool text) :
 	m_Memory(growSize, initSize),

@@ -109,7 +109,7 @@ void *GetModuleHandle(const char *name)
 //static hlds_run wants to use this function
 void *Sys_GetProcAddress(const char *pModuleName, const char *pName)
 {
-	return GetProcAddress(GetModuleHandle(pModuleName), pName);
+	return GetProcAddress(GetModuleHandleA(pModuleName), pName);
 }
 
 // Purpose: returns a pointer to a function, given a module
@@ -127,7 +127,7 @@ void *Sys_GetProcAddress(void *pModuleHandle, const char *pName)
 CSysModule *Sys_LoadModule(const char *pModuleName)
 {
 #ifdef _WIN32
-	HMODULE hDLL = LoadLibrary(pModuleName);
+	HMODULE hDLL = LoadLibraryA(pModuleName);
 #else
 	HMODULE hDLL  = nullptr;
 	char szAbsoluteModuleName[1024];
@@ -154,7 +154,7 @@ CSysModule *Sys_LoadModule(const char *pModuleName)
 
 #if defined(_WIN32)
 		_snprintf(str, sizeof(str), "%s.dll", pModuleName);
-		hDLL = LoadLibrary(str);
+		hDLL = LoadLibraryA(str);
 #elif defined(OSX)
 		printf("Error: %s\n", dlerror());
 		_snprintf(str, sizeof(str), "%s.dylib", szAbsoluteModuleName);

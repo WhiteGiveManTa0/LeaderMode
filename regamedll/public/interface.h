@@ -86,11 +86,11 @@ public:
 	static className __g_##className##_singleton;\
 	EXPOSE_SINGLE_INTERFACE_GLOBALVAR(className, interfaceName, versionName, __g_##className##_singleton)
 
-#ifdef _WIN32
-	#define EXPORT_FUNCTION __declspec(dllexport) EXT_FUNC
+#ifdef WIN32
+#define EXPORT_FUNCTION __declspec(dllexport)
 #else
-	#define EXPORT_FUNCTION __attribute__((visibility("default"))) EXT_FUNC
-#endif // _WIN32
+#define EXPORT_FUNCTION
+#endif
 
 // This function is automatically exported and allows you to access any interfaces exposed with the above macros.
 // if pReturnCode is set, it will return one of the following values

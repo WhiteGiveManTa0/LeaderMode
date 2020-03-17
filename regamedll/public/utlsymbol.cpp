@@ -27,6 +27,7 @@
 */
 
 #include "precompiled.h"
+#include "utlsymbol.h"
 
 LessCtx_t g_LessCtx;
 CUtlSymbolTable *CUtlSymbol::s_pSymbolTable = nullptr;

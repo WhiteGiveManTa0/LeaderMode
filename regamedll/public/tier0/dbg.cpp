@@ -73,7 +73,7 @@ void _AssertValidReadWritePtr(void *ptr, int count)
 void AssertValidStringPtr(const char *ptr, int maxchar)
 {
 #ifdef _WIN32
-	Assert(!IsBadStringPtr(ptr, maxchar));
+	Assert(!IsBadStringPtrA(ptr, maxchar));
 #else
 	Assert(ptr);
 #endif

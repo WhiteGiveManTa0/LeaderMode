@@ -484,7 +484,7 @@ void CUtlVector<T>::FastRemove(int elem)
 	Destruct(&Element(elem));
 	if (m_Size > 0)
 	{
-		Q_memcpy(&Element(elem), &Element(m_Size - 1), sizeof(T));
+		memcpy(&Element(elem), &Element(m_Size - 1), sizeof(T));
 		m_Size--;
 	}
 }

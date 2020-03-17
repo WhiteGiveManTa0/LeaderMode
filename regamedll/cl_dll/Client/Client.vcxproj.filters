@@ -25,6 +25,24 @@
     <Filter Include="dlls\wpn_shared">
       <UniqueIdentifier>{9080ac44-de2b-4d54-a24a-46ca03f9994e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="vgui2">
+      <UniqueIdentifier>{d5eb0e0b-5f89-4c86-9d83-a6c670e1e132}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vgui2\control">
+      <UniqueIdentifier>{b54d29ac-91d0-488d-b5d9-d47488e8e7d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public">
+      <UniqueIdentifier>{5eceb3fd-d35d-41ca-aabb-7f75e36785c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\tier0">
+      <UniqueIdentifier>{05f8be14-a981-42c7-9c0b-feaf035a089c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="public\vgui_control">
+      <UniqueIdentifier>{f15f6ff5-6556-4f59-bf36-d90335f5cc5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cl_dll\Viewport">
+      <UniqueIdentifier>{44587e85-297d-47e8-885a-cea047b64390}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\cdll_int.cpp">
@@ -150,9 +168,6 @@
     <ClCompile Include="..\..\common\parsemsg.cpp">
       <Filter>common</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\common\interface.cpp">
-      <Filter>common</Filter>
-    </ClCompile>
     <ClCompile Include="..\viewport_interface.cpp">
       <Filter>cl_dll</Filter>
     </ClCompile>
@@ -176,6 +191,186 @@
     </ClCompile>
     <ClCompile Include="..\..\dlls\wpn_shared\wpn_ksg12.cpp">
       <Filter>dlls\wpn_shared</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\AnimatingImagePanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\AnimationController.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\BitmapImagePanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\BuildGroup.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\BuildModeDialog.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Button.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\CheckButton.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ComboBox.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\controls.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Divider.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\EditablePanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\FileOpenDialog.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\FocusNavGroup.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Frame.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\GraphPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\HTML.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Image.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ImageList.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ImagePanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Label.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\LabelComboBox.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ListPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ListViewPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Menu.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\MenuBar.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\MenuButton.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\MenuItem.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\MessageBox.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Panel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\PanelHorizListPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\PanelListPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ProgressBar.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ProgressBox.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\PropertyDialog.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\PropertyPage.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\PropertySheet.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\QueryBox.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\RadioButton.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\RichText.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ScrollBar.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ScrollBarSlider.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\SectionedListPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Slider.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\TextEntry.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\TextImage.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\ToggleButton.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\Tooltip.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\TreeView.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\URLLabel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\WizardPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\vgui2\controls\WizardSubPanel.cpp">
+      <Filter>vgui2\control</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\interface.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\KeyValues.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\tier0\dbg.cpp">
+      <Filter>public\tier0</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\utlbuffer.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\utlsymbol.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\filesystem_helpers.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\characterset.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\public\MemPool.cpp">
+      <Filter>public</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Viewport\Viewport.cpp">
+      <Filter>cl_dll\Viewport</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -314,9 +509,6 @@
     <ClInclude Include="..\..\common\parsemsg.h">
       <Filter>common</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\common\interface.h">
-      <Filter>common</Filter>
-    </ClInclude>
     <ClInclude Include="..\viewport_interface.h">
       <Filter>cl_dll</Filter>
     </ClInclude>
@@ -334,6 +526,33 @@
     </ClInclude>
     <ClInclude Include="..\..\dlls\weapontype.h">
       <Filter>dlls</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\interface.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\KeyValues.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\tier0\dbg.h">
+      <Filter>public\tier0</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\utlbuffer.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\filesystem_helpers.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\characterset.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\MemPool.h">
+      <Filter>public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\public\vgui_controls\Controls.h">
+      <Filter>public\vgui_control</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Viewport\Viewport.h">
+      <Filter>cl_dll\Viewport</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

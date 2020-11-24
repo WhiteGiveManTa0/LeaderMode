@@ -1,0 +1,14 @@
+// overview description file for cs_assault.bsp
+
+global 
+{
+	ZOOM	1.54
+	ORIGIN	-720 	1024	-128
+	ROTATED	0
+}
+
+layer 
+{
+	IMAGE	"overviews/cs_assault.dds"
+	HEIGHT	0
+}
